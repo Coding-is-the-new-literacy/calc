@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<div id="header">
+    <head>
+
+        <h1 align="center">CALCULATOR</h1>
+    </div>
+    <style>
+    p.big{
+        line-height: 0.8;
+    }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
+    <script src="calc.js"></script>
+    <link rel="stylesheet" type="text/css" href="calc.css">
+
+</head>
+<body align=center style="background:black">
+    <form name="frm">
+        <div style:"align-contents:center">
+            <input name="a" type="text" id="display"/>
+
+            <input type="button" class="large" value="<---" id="backspace" /><br>
+            <p class="big">      </p>
+            <input type="button" value="sin" class="large" id="sin"/>
+            <input name="v" type="button" value="1" class="large digit"/>
+            <input name="2" type="button" value="2" class="large digit"/>
+            <input name="3" type="button" value="3" class="large digit"/>
+            <input type="button"  onclick=sqr() value="^2" class="large"/><br>
+            <input type="button"  onclick=cos() value="cos" class="large"/>
+            <input name="4" type="button" value="4" class="large digit"/>
+            <input name="5" type="button" value="5" class="large digit"/>
+            <input name="6" type="button" value="6" class="large digit"/>
+            <input type="button" onclick="mul(id)" value="*" class="large"/><br>
+            <input type="button"  onclick=tan() value="tan" class="large"/>
+            <input name="7" type="button" value="7" class="large digit"/>
+            <input name="8" type="button" value="8" class="large digit"/>
+            <input name="9" type="button" value="9" class="large digit"/>
+            <input type="button"  onclick=sub() value="-" class="large"/><br>
+            <input type="button"  onclick=round() value="round" class="small"/>
+            <input name="11" type="button" value="." class="large digit"/>
+            <input name="0" type="button" value="0" class="large digit"/>
+            <input name="=" type="button" value="=" onclick=evali()  class="large"/>
+            <input type="button"  onclick=rsum() value="+" class="large"/><br>    
+            <input type="button"  onclick=log() value="log" class="large"/>
+            <input type="button"  onclick=divide() value="/" class="large"/>
+            <input type="button"  onclick=rclear() value="C" class="large"/>
+            <input type="button"  onclick=mod() value="%" class="large"/>
+            <input type="button"  onclick=sqrt() value="sqrt" class="large"/><br>
+            <input type="button" value="base2" onclick=binary() class="small"/>
+            <input type="button" value="base8" onclick=octal() class="small"/>
+            <input type="button" value="base16" onclick=hexa() class="small"/>
+            <p id="demo" align=center style:"background:green;color:honeydew;font-size:x-large">RESULT    
+            </form>      
+        </div>
+
+
+
+    </body>
+    </html>

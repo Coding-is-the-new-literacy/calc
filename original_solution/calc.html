@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<div style="background:darkturquoise;align-content:center;color:red;font:callibri;font-size:webkit-xxx-large ">
+<head>
+
+<h1 align="center">CALCULATOR</h1>
+</div>
+<style>
+p.big{
+    line-height: 0.8;
+}
+</style>
+<script>
+var s,result,i,b;
+function getvalue()
+{
+    s=document.frm.a.value;
+}
+function rsum() {
+	document.frm.a.value+="+";
+    //alert("Answer is"+ result);
+} 
+function sub() {
+   document.frm.a.value+="-";
+} 
+function rclear(){
+     document.frm.a.value = "";
+}
+function mul() {
+    document.frm.a.value+="*";
+} 
+function divide() {
+    document.frm.a.value+="/";
+} 
+function mod() {
+    document.frm.a.value+="%";
+} 
+function sqrt(){
+    var k =Number(document.frm.a.value);
+    document.frm.a.value=Math.sqrt(k);
+}
+function sqr(){
+    var k =Number(document.frm.a.value);
+    k=k*k;
+    document.frm.a.value=k;
+}
+function run1()
+{
+    document.frm.a.value+="1";
+}
+function run2()
+{
+    document.frm.a.value+="2";
+}
+function run3()
+{
+    document.frm.a.value+="3";
+}
+function run4()
+{
+    document.frm.a.value+="4";
+}
+function run5()
+{
+    document.frm.a.value+="5";
+}
+function run6()
+{
+    document.frm.a.value+="6";
+}
+function run7()
+{
+    document.frm.a.value+="7";
+}
+function run8()
+{
+    document.frm.a.value+="8";
+}
+function run9()
+{
+    document.frm.a.value+="9";
+}
+function run11()
+{
+    document.frm.a.value+=".";
+}
+function run0()
+{
+    document.frm.a.value+="0";
+}
+function run14()
+{
+    getvalue();
+    var l=s.length;
+    --l;
+    b=s.substring(0,l);
+    
+    document.frm.a.value= b;
+}
+function sin()
+{
+    var k =Number(document.frm.a.value);
+    document.frm.a.value=Math.sin(k);
+}
+function evali() {
+    var evalu = eval(document.frm.a.value);
+    document.frm.a.value=evalu;
+}
+function cos()
+{
+    var k =Number(document.frm.a.value);
+    document.frm.a.value=Math.cos(k);
+}
+function tan()
+{
+    var k =Number(document.frm.a.value);
+    document.frm.a.value=Math.tan(k);
+}
+function round()
+{
+    var k =Number(document.frm.a.value);
+    document.frm.a.value=Math.round(k);
+}
+function log()
+{
+    var k =Number(document.frm.a.value);
+    document.frm.a.value=Math.log(k);
+}
+function binary()
+{
+    var k =Number(document.frm.a.value);
+    document.frm.a.value=k.toString(2);
+}
+function octal()
+{
+    var k =Number(document.frm.a.value);
+    document.frm.a.value=k.toString(8);
+}
+function hexa()
+{
+    var k =Number(document.frm.a.value);
+    document.frm.a.value=k.toString(16);
+}
+</script>
+</head>
+<body align=center style="background:yellow">
+<form name="frm">
+<div style:"align-contents:center">
+    <input name="a" type="text" style="height:55px; width:255px;font-size:x-large;" placeholder="suck it"/>
+    
+    <input type="button" value="<---" onclick=run14() style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/><br>
+    <p class="big">      </p>
+    <input type="button" value="sin" onclick=sin() style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+    <input name="v" type="button" value="1" onclick=run1() style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+    <input name="2" type="button" value="2" onclick=run2() style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+    <input name="3" type="button" value="3" onclick=run3() style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+    <input type="button"  onclick=sqr() value="^2" style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/><br>
+    <input type="button"  onclick=cos() value="cos" style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+    <input name="4" type="button" value="4" onclick=run4() style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+    <input name="5" type="button" value="5" onclick=run5() style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+    <input name="6" type="button" value="6" onclick=run6() style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+    <input type="button" onclick="mul(id)" value="x" style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/><br>
+    <input type="button"  onclick=tan() value="tan" style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+    <input name="7" type="button" value="7" onclick=run7() style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+    <input name="8" type="button" value="8" onclick=run8() style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+    <input name="9" type="button" value="9" onclick=run9() style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+     <input type="button"  onclick=sub() value="-" style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/><br>
+     <input type="button"  onclick=round() value="round" style=" font-size:x-smaller;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+    <input name="11" type="button" value="." onclick=run11() style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+    <input name="0" type="button" value="0" onclick=run0() style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+    <input name="=" type="button" value="=" onclick=evali()  style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+    <input type="button"  onclick=rsum() value="+" style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/><br>    
+    <input type="button"  onclick=log() value="log" style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+    <input type="button"  onclick=divide() value="/" style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+    <input type="button"  onclick=rclear() value="C" style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+    <input type="button"  onclick=mod() value="%" style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+    <input type="button"  onclick=sqrt() value="sqrt" style=" font-size:x-large;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/><br>
+     <input type="button" value="base2" onclick=binary() style=" font-size:x-smaller;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+     <input type="button" value="base8" onclick=octal() style=" font-size:x-smaller;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+      <input type="button" value="base16" onclick=hexa() style=" font-size:x-smaller;background:chartreuse;color:honeydew;height:60px;width:60px;text-shadow: darkcyan "/>
+     <p id="demo" align=center style:"background:green;color:honeydew;font-size:x-large">RESULT    
+</form>      
+</div>
+   
+
+
+</body>
+</html>

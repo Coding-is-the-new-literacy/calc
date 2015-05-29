@@ -1,0 +1,31 @@
+#header {
+	background:darkturquoise;
+	align-content:center;
+	color:red;
+	font:callibri;
+	font-size:webkit-xxx-large
+}
+
+.large {
+	font-size:x-large;
+	background:grey;
+	color:honeydew;
+	height:60px;
+	width:60px;
+	text-shadow:darkcyan;
+}
+
+.small {
+	font-size:x-smaller;
+	background:grey;
+	color:honeydew;
+	height:60px;
+	width:60px;
+	text-shadow:darkcyan;
+}
+
+#display {
+	height:55px; 
+	width:255px;
+	font-size:x-large;
+}
